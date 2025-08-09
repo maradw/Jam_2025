@@ -10,6 +10,10 @@ public class AudioManager : PersistentSingleton<AudioManager>
     public AudioData _audioData;
     [SerializeField] private AudioSource _soundMusic;
     [SerializeField] private AudioSource _soundSFX;
+    [SerializeField] Slider master;
+    [SerializeField] Slider music;
+    [SerializeField] Slider SFX;
+
     void Start()
     {
         PlayMusicIndex(0);
@@ -18,16 +22,19 @@ public class AudioManager : PersistentSingleton<AudioManager>
     {
         _audioData._master = f;
         _audioGameMixer.SetFloat("Master", Mathf.Log10(f) * 20f);
+        Debug.Log("Master volume set to: " + f);
     }
     public void SetMusic(float f)
     {
         _audioData._music = f;
         _audioGameMixer.SetFloat("Music", Mathf.Log10(f) * 20f);
+        Debug.Log("Music volume set to: " + f);
     }
     public void SetSFX(float f)
     {
         _audioData._SFX = f;
         _audioGameMixer.SetFloat("SFX", Mathf.Log10(f) * 20f);
+        Debug.Log("SFX volume set to: " + f);
     }
     public void PlaySound()
     {
