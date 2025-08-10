@@ -9,6 +9,8 @@ TagManager:
   - ActiveFall
   - ActiveSequence
   - Coin
+  - Lose
+  - win
   layers:
   - Default
   - TransparentFX

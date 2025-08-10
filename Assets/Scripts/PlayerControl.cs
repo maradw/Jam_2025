@@ -14,7 +14,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private int maxJumps = 2;
     [SerializeField] private int gravity;
     [SerializeField] private int jumpCount = 0;
-
+    //[SerializeField] GameManager gameManager;
     int life = 10;
 
     public static event Action<int> OnCollisionItem;
@@ -22,8 +22,16 @@ public class PlayerControl : MonoBehaviour
     public static event Action OnCollisionActiveteSequence;
     public static event Action OnCollisionActivateFall;
     public static event Action OnCollisionActivateSide;
+
+    public static event Action OnLose;
+    public static event Action OnWin;
+    [SerializeField] GameObject losePanel;
+    [SerializeField] GameObject winPanel;
     void Start()
     {
+        winPanel.SetActive(false);
+        losePanel.SetActive (false);
+
     if (myRBD == null)
         myRBD = GetComponent<Rigidbody2D>();
 
@@ -71,6 +79,10 @@ public class PlayerControl : MonoBehaviour
         }
 
     }
+    public void SetActive()
+    {
+        losePanel.SetActive(true);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "ActiveSide")
@@ -90,6 +102,18 @@ public class PlayerControl : MonoBehaviour
             collision.gameObject.SetActive(false);
             Debug.Log("activate sequence");
             OnCollisionActiveteSequence?.Invoke();
+        }
+        if(collision.gameObject.tag == "Lose")
+        {
+            losePanel.SetActive(true);
+
+            OnLose?.Invoke();
+            //gameManager.EndGame();
+        }else if(collision.gameObject.tag == "win")
+        {
+            winPanel.SetActive(true);
+            OnWin?.Invoke();
+            //gameManager.EndGame();
         }
 
     }

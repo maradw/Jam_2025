@@ -32,12 +32,16 @@ public class GameManager : MonoBehaviour
         PlayerControl.OnCollisionActivateSide += MoveSide;
         PlayerControl.OnCollisionActivateFall += FallPlatform;
         PlayerControl.OnCollisionActiveteSequence += StartSequence;
+        PlayerControl.OnLose += EndGame;
+        PlayerControl.OnWin += EndGame;
     }
     private void OnDisable()
     {
         PlayerControl.OnCollisionActivateSide -= MoveSide;
         PlayerControl.OnCollisionActivateFall -= FallPlatform;
         PlayerControl.OnCollisionActiveteSequence -= StartSequence;
+        PlayerControl.OnLose -= EndGame;
+        PlayerControl.OnWin -= EndGame;
     }
    void MoveSide()
     {
