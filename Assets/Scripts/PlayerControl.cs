@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System;
@@ -110,7 +108,7 @@ public class PlayerControl : MonoBehaviour
     {
         myRBD.linearVelocity = new Vector2(_horizontal * velocityModifier, myRBD.linearVelocity.y);
 
-        if(isInTheAir == true)
+        if (isInTheAir == true)
         {
             myRBD.gravityScale = gravity;
         }

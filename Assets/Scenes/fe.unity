@@ -1127,11 +1127,11 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 150
+  m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 95acec758a94b8a45a2e01be1b8a7180, type: 2}
+  m_Material: {fileID: 6200000, guid: eecb3522a92013b4e9a0b68686eef396, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1156,8 +1156,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   myRBD: {fileID: 848939117}
-  velocityModifier: 2
-  jumpForce: 1000
+  velocityModifier: 10
+  jumpForce: 5
   maxJumps: 2
   gravity: 5
   jumpCount: 0
@@ -1553,6 +1553,7 @@ GameObject:
   - component: {fileID: 968336263}
   - component: {fileID: 968336262}
   - component: {fileID: 968336265}
+  - component: {fileID: 968336266}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1678,6 +1679,23 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &968336266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968336261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ace239b46747994da48aa42b6233c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 848939121}
+  velocidadCamara: 0.025
+  desplazamiento: {x: 0, y: 0, z: 0}
+  minClamp: {x: -100, y: -100}
+  maxClamp: {x: 100, y: 100}
 --- !u!1 &970518430
 GameObject:
   m_ObjectHideFlags: 0
