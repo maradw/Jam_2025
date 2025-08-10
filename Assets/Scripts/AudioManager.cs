@@ -21,7 +21,9 @@ public class AudioManager : PersistentSingleton<AudioManager>
     public void Setmaster(float f)
     {
         _audioData._master = f;
-        _audioGameMixer.SetFloat("Master", Mathf.Log10(f) * 20f);
+
+        float volume = f > 0.0001f ? Mathf.Log10(f) * 20f : -80f;
+        _audioGameMixer.SetFloat("Master", volume);
         Debug.Log("Master volume set to: " + f);
     }
     public void SetMusic(float f)
