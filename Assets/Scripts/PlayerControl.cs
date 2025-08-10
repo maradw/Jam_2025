@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 using System;
 public class PlayerControl : MonoBehaviour
 {
-    private Animator animator;
+    public Animator animator;
     private float _horizontal;
     [SerializeField] private Rigidbody2D myRBD;
 

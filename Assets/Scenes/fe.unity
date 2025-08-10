@@ -1020,6 +1020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26a1805915e026146810b0dcf7c3fd3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   myRBD: {fileID: 848939117}
   velocityModifier: 2
   jumpForce: 1000
