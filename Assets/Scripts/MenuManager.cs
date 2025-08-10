@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class MenuManager : MonoBehaviour
 {
     [Header("Scene Settings")]
-    public string gameplaySceneName = "GamePlay";
+    public string gameplaySceneName ;
 
     [Header("Main Menu")]
     public GameObject mainMenuPanel;
