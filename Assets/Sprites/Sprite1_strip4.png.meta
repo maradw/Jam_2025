@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 484878e28f92f2e42a0bbb9c7a33bf30
+guid: c4c897b44fde4e5439de5c9d86de2c4e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3030790804920673473
-    second: Fondo Game_0
+      213: 7350686115913422796
+    second: Sprite1_strip4_0
+  - first:
+      213: -7721507311890463036
+    second: Sprite1_strip4_1
+  - first:
+      213: -7280217143116588521
+    second: Sprite1_strip4_2
+  - first:
+      213: 7505700032443678084
+    second: Sprite1_strip4_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fondo Game_0
+      name: Sprite1_strip4_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 16
+        y: 21
+        width: 29
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c421d3ed288f0a20800000000000000
-      internalID: 3030790804920673473
+      spriteID: cc75a6aa312e20660800000000000000
+      internalID: 7350686115913422796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite1_strip4_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 18
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c600389202b7d490800000000000000
+      internalID: -7721507311890463036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite1_strip4_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 20
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a93d0a41977fa90800000000000000
+      internalID: -7280217143116588521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite1_strip4_3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 18
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d7170a96a992860800000000000000
+      internalID: 7505700032443678084
       vertices: []
       indices: 
       edges: []
@@ -147,8 +222,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Fondo Game_0: 3030790804920673473
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

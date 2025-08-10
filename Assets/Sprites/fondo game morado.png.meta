@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 484878e28f92f2e42a0bbb9c7a33bf30
+guid: 44993c0c9649e394291f308c0cafd1dc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3030790804920673473
-    second: Fondo Game_0
+      213: -3821065413082231298
+    second: fondo game morado_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fondo Game_0
+      name: fondo game morado_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c421d3ed288f0a20800000000000000
-      internalID: 3030790804920673473
+      spriteID: efdc3bd6049d8fac0800000000000000
+      internalID: -3821065413082231298
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Fondo Game_0: 3030790804920673473
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

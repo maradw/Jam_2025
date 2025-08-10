@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 484878e28f92f2e42a0bbb9c7a33bf30
+guid: c8307944542fb664e8e0ae12667cae6b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3030790804920673473
-    second: Fondo Game_0
+      213: -4787457621166809445
+    second: pause (1)_0
+  - first:
+      213: -4606365986042920941
+    second: pause (1)_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,23 +116,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fondo Game_0
+      name: pause
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c421d3ed288f0a20800000000000000
-      internalID: 3030790804920673473
+      spriteID: b9e9d1998a88f8db0800000000000000
+      internalID: -4787457621166809445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pause (1)_1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31048709a86e210c0800000000000000
+      internalID: -4606365986042920941
       vertices: []
       indices: 
       edges: []
@@ -138,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 89191a783f0714e42a001cb412c5111e
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +173,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fondo Game_0: 3030790804920673473
+      pause: -4787457621166809445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
