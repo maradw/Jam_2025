@@ -6,8 +6,8 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-
-public class GameManager : PersistentSingleton<GameManager>
+using UnityEngine.SceneManagement;
+public class GameManager : MonoBehaviour
 {
 
     [SerializeField] private bool isGameRunning = false;
@@ -24,6 +24,7 @@ public class GameManager : PersistentSingleton<GameManager>
 
     [SerializeField] Transform sidePlatform;
 
+    string sceneName ;  
     public static event Action OnWin;
     private void OnEnable()
     {
@@ -72,7 +73,11 @@ public class GameManager : PersistentSingleton<GameManager>
      
 
     }
+    public void GoScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
 
+    }
     public void PauseGame()
     {
         //if (!isGameRunning || isPaused) return;
