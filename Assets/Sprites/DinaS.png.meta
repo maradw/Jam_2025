@@ -1,20 +1,31 @@
 fileFormatVersion: 2
-guid: 9de779ce27b412549a00cb85acd8fea0
-guid: 136d4a24343086849b20da0eaa2f6223
+guid: 3b53eb5bcce876040bc3df7e445083b1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6083983263742534496
-    second: Sprite1_1_strip2_0
+      213: 8907463275922114802
+    second: DinaS_0
   - first:
-      213: -1407938009206236313
-    second: Sprite1_1_strip2_1
+      213: -3110988811798671003
+    second: DinaS_1
   - first:
-      213: 5175093068859842617
-    second: Sprite1_1_strip2_2
+      213: -4189757363118615099
+    second: DinaS_2
   - first:
-      213: 2119978475310797189
-    second: Sprite1_1_strip2_3
+      213: 8944336172678275752
+    second: DinaS_3
+  - first:
+      213: 2611825234498067903
+    second: DinaS_4
+  - first:
+      213: 5620038110175883558
+    second: DinaS_5
+  - first:
+      213: -6443235181591279098
+    second: DinaS_6
+  - first:
+      213: -1202507297709227697
+    second: DinaS_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,30 +117,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite1_1_strip2_0
+      name: DinaS_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 19
-        width: 20
-        height: 35
+        x: 21
+        y: 18
+        width: 22
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ac5439b479519ba0800000000000000
-      internalID: -6083983263742534496
+      spriteID: 2f8cc2bd7aaad9b70800000000000000
+      internalID: 8907463275922114802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite1_1_strip2_1
+      name: DinaS_1
       rect:
         serializedVersion: 2
-        x: 86
+        x: 73
         y: 19
-        width: 20
-        height: 35
+        width: 43
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,52 +158,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76bdd7717dff57ce0800000000000000
-      internalID: -1407938009206236313
+      spriteID: 561968c882c83d4d0800000000000000
+      internalID: -3110988811798671003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite1_1_strip2_2
+      name: DinaS_2
       rect:
         serializedVersion: 2
-        x: 88
-        y: 18
-        width: 8
-        height: 7
+        x: 137
+        y: 19
+        width: 43
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9302af03abf91d740800000000000000
-      internalID: 5175093068859842617
+      spriteID: 5c5dc3460edfad5c0800000000000000
+      internalID: -4189757363118615099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite1_1_strip2_3
+      name: DinaS_3
       rect:
         serializedVersion: 2
-        x: 97
+        x: 213
         y: 18
-        width: 9
-        height: 7
+        width: 37
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 581df50f03dab6d10800000000000000
-      internalID: 2119978475310797189
+      spriteID: 8a26a242c5aa02c70800000000000000
+      internalID: 8944336172678275752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinaS_4
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 19
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd98a576311f3420800000000000000
+      internalID: 2611825234498067903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinaS_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 17
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621f03d82e26efd40800000000000000
+      internalID: 5620038110175883558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinaS_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 17
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ac3f47db70596a0800000000000000
+      internalID: -6443235181591279098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DinaS_7
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 16
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f410a30ebf5df4fe0800000000000000
+      internalID: -1202507297709227697
       vertices: []
       indices: 
       edges: []
@@ -214,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 023379ecb53753640926f9da8cf0f60b
+    spriteID: 2b7172e8c51fbb74b9928c9c8bee8199
     internalID: 0
     vertices: []
     indices: 
@@ -224,8 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sprite1_1_strip2_0: -6083983263742534496
-      Sprite1_1_strip2_1: -1407938009206236313
+      DinaS_0: 8907463275922114802
+      DinaS_1: -3110988811798671003
+      DinaS_2: -4189757363118615099
+      DinaS_3: 8944336172678275752
+      DinaS_4: 2611825234498067903
+      DinaS_5: 5620038110175883558
+      DinaS_6: -6443235181591279098
+      DinaS_7: -1202507297709227697
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

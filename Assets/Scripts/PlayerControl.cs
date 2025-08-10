@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using System;
 public class PlayerControl : MonoBehaviour
 {
+    private Animator animator;
     private float _horizontal;
     [SerializeField] private Rigidbody2D myRBD;
 
@@ -15,6 +16,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private int maxJumps = 2;
     [SerializeField] private int gravity;
     [SerializeField] private int jumpCount = 0;
+
     int life = 10;
 
     public static event Action<int> OnCollisionItem;
@@ -24,7 +26,11 @@ public class PlayerControl : MonoBehaviour
     public static event Action OnCollisionActivateSide;
     void Start()
     {
+    if (myRBD == null)
+        myRBD = GetComponent<Rigidbody2D>();
 
+    if (animator == null)
+        animator = GetComponent<Animator>();
     }
 
     public void OnMovement(InputAction.CallbackContext move)
@@ -33,16 +39,19 @@ public class PlayerControl : MonoBehaviour
     }
     public void OnJump(InputAction.CallbackContext jump)
     {
+        
+        
         if (jump.performed && jumpCount < maxJumps)
         {
             myRBD.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-            
+            animator.SetTrigger("jump_trigger");
             jumpCount += 1;
             //myRBD.linearVelocityY
         }
         if (jump.canceled)
         {
             isInTheAir = true;
+            
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -53,7 +62,7 @@ public class PlayerControl : MonoBehaviour
 
             jumpCount = 0;
             isInTheAir = false;
-
+            animator.SetTrigger("land_trigger");
         }
 
         if (collision.gameObject.tag == "Coin")
@@ -89,6 +98,12 @@ public class PlayerControl : MonoBehaviour
     void Update()
     {
         // Debug.Log(jumpCount);
+        animator.SetBool("running", _horizontal != 0.0f);
+
+        if (_horizontal < 0.0f)
+        transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+    else if (_horizontal > 0.0f)
+        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
     }
     [SerializeField] bool isInTheAir;
     public void FixedUpdate()
