@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fondo game morado_0: -3821065413082231298
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
