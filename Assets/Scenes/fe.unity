@@ -803,6 +803,7 @@ GameObject:
   - component: {fileID: 848939118}
   - component: {fileID: 848939117}
   - component: {fileID: 848939122}
+  - component: {fileID: 848939123}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -850,7 +851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRBD: {fileID: 848939117}
-  velocityModifier: 10
+  velocityModifier: 2
   jumpForce: 1000
   maxJumps: 2
   gravity: 5
@@ -1029,7 +1030,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 7d6d14c4ac4a30b42890fec31c3b7610, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1050,8 +1051,8 @@ Transform:
   m_GameObject: {fileID: 848939116}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.8381, y: -1.3135, z: 0}
-  m_LocalScale: {x: 5.074436, y: 5.074436, z: 5.074436}
+  m_LocalPosition: {x: -8.28, y: -1.65, z: 0}
+  m_LocalScale: {x: 4.538998, y: 4.645646, z: 5.859796}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -1093,6 +1094,28 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0027710102, y: 0}
   m_Size: {x: 0.15381666, y: 0.33999997}
   m_Direction: 0
+--- !u!95 &848939123
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848939116}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7290a8108d519bc41bfea6470574c684, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &868573659 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7112719070155251557, guid: a992e9700dc33c7449a9113601920935, type: 3}
@@ -2029,7 +2052,7 @@ Transform:
   m_GameObject: {fileID: 1555650632}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3413, y: -3.6365, z: 0}
+  m_LocalPosition: {x: 1.342, y: -3.634, z: 0}
   m_LocalScale: {x: 1.0234685, y: 2.6266, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
