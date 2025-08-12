@@ -27,6 +27,8 @@ public class PlayerControl : MonoBehaviour
     public static event Action OnWin;
     [SerializeField] GameObject losePanel;
     [SerializeField] GameObject winPanel;
+    int coinsNumb = 0;
+    //public static event Action OnCollisionCoin;
     void Start()
     {
         winPanel.SetActive(false);
@@ -71,12 +73,7 @@ public class PlayerControl : MonoBehaviour
             animator.SetTrigger("land_trigger");
         }
 
-        if (collision.gameObject.tag == "Coin")
-        {
-            OnCollisionItem?.Invoke(5);
-            Destroy(collision.gameObject);
-            Debug.Log("Coin");
-        }
+        
 
     }
     public void SetActive()
@@ -114,6 +111,13 @@ public class PlayerControl : MonoBehaviour
             winPanel.SetActive(true);
             OnWin?.Invoke();
             //gameManager.EndGame();
+        }
+        if (collision.gameObject.tag == "Coin")
+        {
+            coinsNumb++;
+            OnCollisionItem?.Invoke(coinsNumb);
+            Destroy(collision.gameObject);
+            Debug.Log("Coin");
         }
 
     }

@@ -1698,7 +1698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ac9d613396e6324683bdfc077bc0d04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameplaySceneName: fe
+  gameplaySceneName: Cinematic
   mainMenuPanel: {fileID: 0}
   optionsPopup: {fileID: 0}
   creditsPopup: {fileID: 0}
@@ -3370,7 +3370,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16.13147, y: 0}
+  m_AnchoredPosition: {x: -16.131348, y: 0}
   m_SizeDelta: {x: -303.554, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1462619005

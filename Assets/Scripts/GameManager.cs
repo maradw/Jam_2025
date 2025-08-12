@@ -16,13 +16,15 @@ public class GameManager : MonoBehaviour
     public static event Action OnGameStart;
     public static event Action OnGamePaused;
     public static event Action OnGameResumed;
-    [SerializeField] GameObject coins;
+   // [SerializeField] GameObject coins;
 
     // public static event Action OnGameOver;
    [SerializeField] Transform objectToMove;
     [SerializeField] List<Transform> sequence;
 
     [SerializeField] Transform sidePlatform;
+
+    [SerializeField] TextMeshProUGUI scoreText;
 
     string sceneName ;  
     public static event Action OnWin;
@@ -34,6 +36,7 @@ public class GameManager : MonoBehaviour
         PlayerControl.OnCollisionActiveteSequence += StartSequence;
         PlayerControl.OnLose += EndGame;
         PlayerControl.OnWin += EndGame;
+        PlayerControl.OnCollisionItem +=ActualizeItem;
     }
     private void OnDisable()
     {
@@ -49,7 +52,10 @@ public class GameManager : MonoBehaviour
             .SetEase(Ease.InOutQuad)
             .OnComplete(() => Debug.Log("Platform moved successfully!"));
     }
-
+    public void ActualizeItem(int coin)
+    {
+        scoreText.text = "X " + coin;
+    }
     void FallPlatform()
     {
         objectToMove.DOMoveY(objectToMove.position.y - 20f, 1f)
