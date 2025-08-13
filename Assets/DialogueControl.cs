@@ -2,7 +2,6 @@
 using DG.Tweening;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -19,8 +18,20 @@ public class DialogueControl : MonoBehaviour
     [SerializeField] SpriteRenderer imageRef;
     [SerializeField] GameObject nextScene;
     bool isFirstScale = false;
+    Vector3 initialCameraPos;
+    Vector3 initialBackScale;
+
+    void Awake()
+    {
+        initialCameraPos = cameraRef.position;
+        initialBackScale = backRef.localScale;
+    }
+
     void Start()
-    {cameraRef.DOMoveY(cameraRef.transform.position.y + 5f, 1f);
+    {
+        cameraRef.position = initialCameraPos;
+        backRef.localScale = initialBackScale;
+        cameraRef.DOMoveY(cameraRef.transform.position.y + 5f, 1f);
         dialogueText.text = dialogueLines[0];
         nextScene.SetActive(false);
         ScaleBack();

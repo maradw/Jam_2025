@@ -86,6 +86,7 @@ public class GameManager : MonoBehaviour
     public void GoScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+        ResumeGame();
 
     }
     public void PauseGame()
@@ -116,10 +117,7 @@ public class GameManager : MonoBehaviour
       
 
     }
-    public void InitializeGameSession()
-    {
-        OnGameStart?.Invoke();
-    }
+    
     IEnumerator SequenceFall()
     {
         for (int i = 0; i < sequence.Count; i++)
